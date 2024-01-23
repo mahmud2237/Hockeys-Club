@@ -16,12 +16,52 @@
         .font-manrope {
             font-family: "Manrope", sans-serif;
         }
+        .container{
+            position: relative;
+            display: flex;
+            gap: 30px;
+        }
+        .container .box{
+            position: relative;
+            padding: 40px 0;
+            width: 240px;
+            background: #FFF;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .container .box .circle{
+            position: relative;
+            width: 150px;
+            height: 150px;
+            background: conic-gradient(from 0deg, var(--clr) 0%, var(--clr) 0% var(--i), #333333 var(--i), #333 100%);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container .box .circle::before{
+            content: '';
+            position: absolute;
+            inset: 10px;
+            background: #FFF;
+            border-radius: 50%;
+        }
+        .container .box h2{
+            position: relative;
+            text-align: center;
+            font-size: 2.5em;
+            color: #131318;
+            font-weight: 600;
+        }
+
     </style>
 </head>
 
 <body class="font-manrope bg-[#FFF] w-full h-full">
     <header>
-        <div class="flex items-center justify-between">
+        <div class="flex items-center justify-between my-7">
             <div>
                 <h3 class="text-[#131318] text-4xl font-extrabold">Hockey<span class="text-[#FF4240]">'</span>s</h3>
             </div>
@@ -40,6 +80,64 @@
 
                 <button class="btn rounded-lg bg-[#FF4240] text-[#FFFFFF]">Get Ticket</button>
             </div>
+        </div>
+        <div>
+
+        </div>
+        <div>
+            <h4 class="text-[#131318] font-semibold">Professional Hockeys Club</h4>
+            <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit
+                nullam proin. </p>
+        </div>
+        <div class="container">
+            <div class="box" style="--i:87%;--clr: #FF4240;">
+                <div class="circle">
+                    <h2>87<span>%</span></h2>
+                </div>
+                <h4 class="text-[#131318] font-semibold">Prayer Facility</h4>
+                <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor</p>
+            </div>
+            <div class="box" style="--i:95%;--clr: #49D293;">
+                <div class="circle">
+                    <h2>95<span>%</span></h2>
+                </div>
+                <h4 class="text-[#131318] font-semibold">Experienced Coach</h4>
+                <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor</p>
+            </div>
+            <div class="box" style="--i:90%;--clr: #FFB546;">
+                <div class="circle">
+                    <h2>90<span>%</span></h2>
+                </div>
+                <h4 class="text-[#131318] font-semibold">Senior Player</h4>
+                <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor</p>
+            </div>
+            <div class="box" style="--i:80%;--clr: #4C8DF1;">
+                <div class="circle">
+                    <h2>80<span>%</span></h2>
+                </div>
+                <h4 class="text-[#131318] font-semibold">Training Ground</h4>
+                <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor</p>
+            </div>
+        </div>
+        <div>
+            <h4 class="text-[#131318] font-semibold">Program Sections</h4>
+            <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit
+                nullam proin. </p>
+        </div>
+        <div>
+            <h4 class="text-[#131318] font-semibold">Our New Products</h4>
+            <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit
+                nullam proin. </p>
+        </div>
+        <div>
+            <h4 class="text-[#131318] font-semibold">Clients Question</h4>
+            <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit
+                nullam proin. </p>
+        </div>
+        <div>
+            <h4 class="text-[#131318] font-semibold">Get In Touch</h4>
+            <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit
+                nullam proin. </p>
         </div>
 
     </header>
