@@ -12,16 +12,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- Font Awesome links here -->
+    <script src="https://kit.fontawesome.com/9427a11101.js" crossorigin="anonymous"></script>
     <style>
         .font-manrope {
             font-family: "Manrope", sans-serif;
         }
-        .container{
+
+        .container {
             position: relative;
             display: flex;
             gap: 30px;
         }
-        .container .box{
+
+        .container .box {
             position: relative;
             padding: 40px 0;
             width: 240px;
@@ -31,7 +35,8 @@
             align-items: center;
             flex-direction: column;
         }
-        .container .box .circle{
+
+        .container .box .circle {
             position: relative;
             width: 150px;
             height: 150px;
@@ -41,21 +46,22 @@
             justify-content: center;
             align-items: center;
         }
-        .container .box .circle::before{
+
+        .container .box .circle::before {
             content: '';
             position: absolute;
             inset: 10px;
             background: #FFF;
             border-radius: 50%;
         }
-        .container .box h2{
+
+        .container .box h2 {
             position: relative;
             text-align: center;
             font-size: 2.5em;
             color: #131318;
             font-weight: 600;
         }
-
     </style>
 </head>
 
@@ -77,16 +83,50 @@
                     <input class="bg-white w-20 h-6" type="text">
                     <img src="Images/search.png" alt="">
                 </div>
-
                 <button class="btn rounded-lg bg-[#FF4240] text-[#FFFFFF]">Get Ticket</button>
             </div>
         </div>
         <div>
-
+            <div class="carousel relative w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 left-4 bottom-0">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/2.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 left-4 bottom-0">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="Images/3.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 left-4 bottom-0">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="Images/4.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 left-4 bottom-0">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+            <div class="relative bg-[#131318] p-7 rounded-xl h-[12vh] w-[65vh] lg: -translate-y-8 mx-40">
+                <h5 class="font-semibold text-xl">Meet all the heroes from the field</h5>
+                <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in
+                    sit nullam proin. </p>
+            </div>
         </div>
         <div>
-            <h4 class="text-[#131318] font-semibold">Professional Hockeys Club</h4>
-            <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit
+            <h4 class="text-[#131318] font-semibold text-center text-3xl">Professional Hockeys Club</h4>
+            <p class="text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor.
+                Purus urna in sit
                 nullam proin. </p>
         </div>
         <div class="container">
@@ -94,55 +134,179 @@
                 <div class="circle">
                     <h2>87<span>%</span></h2>
                 </div>
-                <h4 class="text-[#131318] font-semibold">Prayer Facility</h4>
-                <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor</p>
+                <h4 class="text-[#131318] font-semibold text-xl">Prayer Facility</h4>
+                <p class="text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat
+                    dolor</p>
             </div>
             <div class="box" style="--i:95%;--clr: #49D293;">
                 <div class="circle">
                     <h2>95<span>%</span></h2>
                 </div>
-                <h4 class="text-[#131318] font-semibold">Experienced Coach</h4>
-                <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor</p>
+                <h4 class="text-[#131318] font-semibold text-xl">Experienced Coach</h4>
+                <p class="text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat
+                    dolor</p>
             </div>
             <div class="box" style="--i:90%;--clr: #FFB546;">
                 <div class="circle">
                     <h2>90<span>%</span></h2>
                 </div>
-                <h4 class="text-[#131318] font-semibold">Senior Player</h4>
-                <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor</p>
+                <h4 class="text-[#131318] font-semibold text-xl">Senior Player</h4>
+                <p class="text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat
+                    dolor</p>
             </div>
             <div class="box" style="--i:80%;--clr: #4C8DF1;">
                 <div class="circle">
                     <h2>80<span>%</span></h2>
                 </div>
-                <h4 class="text-[#131318] font-semibold">Training Ground</h4>
-                <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor</p>
+                <h4 class="text-[#131318] font-semibold text-center text-xl">Training Ground</h4>
+                <p class="text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat
+                    dolor</p>
             </div>
         </div>
         <div>
-            <h4 class="text-[#131318] font-semibold">Program Sections</h4>
-            <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit
+            <h4 class="text-[#131318] font-semibold text-center text-3xl">Program Sections</h4>
+            <p class="text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor.
+                Purus urna in sit
                 nullam proin. </p>
         </div>
-        <div>
-            <h4 class="text-[#131318] font-semibold">Our New Products</h4>
-            <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit
-                nullam proin. </p>
+        <div class="">
+            <div class="flex">
+                <div class="bg-[linear-gradient(45deg,rgba(0,0,0,0.5),rgba(0,0,0,0.1))]">
+                    <img src="Images/2.png" alt="">
+                </div>
+                <div>
+                    <img src="Images/3.png" alt="">
+                </div>
+            </div>
+            <div>
+                <img src="Images/4.png" alt="">
+            </div>
         </div>
-        <div>
-            <h4 class="text-[#131318] font-semibold">Clients Question</h4>
-            <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit
-                nullam proin. </p>
-        </div>
-        <div>
-            <h4 class="text-[#131318] font-semibold">Get In Touch</h4>
-            <p>Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit
-                nullam proin. </p>
-        </div>
-
     </header>
     <main>
+        <div>
+            <h4 class="text-[#131318] font-semibold text-center text-3xl">Our New Products</h4>
+            <p class="text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor.
+                Purus urna in sit
+                nullam proin. </p>
+        </div>
+        <div>
+            <div class="flex">
+                <div class="flex gap-3">
+                    <img src="Images/5.png" alt="">
+                    <div>
+                        <div class="flex gap-5">
+                            <h1><i class="fa-solid fa-star text-[#F99808]"></i>5.0</h1>
+                            <h1><i class="fa-regular fa-eye"></i>20</h1>
+                            <h1><i class="fa-regular fa-heart"></i>200</h1>
+                        </div>
+                        <h4 class="text-[#131318] font-semibold text-start text-xl">World Cup Flags Football</h4>
+                        <p class="text-start">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis.</p>
+                        <div class="flex gap-4">
+                            <h2 class="text-[#FF4240] font-semibold">Price - $22.00</h2>
+                            <h1><i class="fa-solid fa-cart-shopping"></i> Delivery Fee: Free</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-3">
+                    <img src="Images/6.png" alt="">
+                    <div>
+                        <div class="flex gap-5">
+                            <h1><i class="fa-solid fa-star text-[#F99808]"></i>5.0</h1>
+                            <h1><i class="fa-regular fa-eye"></i>20</h1>
+                            <h1><i class="fa-regular fa-heart"></i>200</h1>
+                        </div>
+                        <h4 class="text-[#131318] font-semibold text-start text-xl">World Cup Flags Football</h4>
+                        <p class="text-start">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis.</p>
+                        <div class="flex gap-4">
+                            <h2 class="text-[#FF4240] font-semibold">Price - $22.00</h2>
+                            <h1><i class="fa-solid fa-cart-shopping"></i> Delivery Fee: Free</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="flex gap-3">
+                    <img src="Images/7.png" alt="">
+                    <div>
+                        <div class="flex gap-5">
+                            <h1><i class="fa-solid fa-star text-[#F99808]"></i>5.0</h1>
+                            <h1><i class="fa-regular fa-eye"></i>20</h1>
+                            <h1><i class="fa-regular fa-heart"></i>200</h1>
+                        </div>
+                        <h4 class="text-[#131318] font-semibold text-start text-xl">World Cup Flags Football</h4>
+                        <p class="text-start">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis.</p>
+                        <div class="flex gap-4">
+                            <h2 class="text-[#FF4240] font-semibold">Price - $22.00</h2>
+                            <h1><i class="fa-solid fa-cart-shopping"></i> Delivery Fee: Free</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-3">
+                    <img src="Images/8.png" alt="">
+                    <div>
+                        <div class="flex gap-5">
+                            <h1><i class="fa-solid fa-star text-[#F99808]"></i>5.0</h1>
+                            <h1><i class="fa-regular fa-eye"></i>20</h1>
+                            <h1><i class="fa-regular fa-heart"></i>200</h1>
+                        </div>
+                        <h4 class="text-[#131318] font-semibold text-start text-xl">World Cup Flags Football</h4>
+                        <p class="text-start">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis.</p>
+                        <div class="flex gap-4">
+                            <h2 class="text-[#FF4240] font-semibold">Price - $22.00</h2>
+                            <h1><i class="fa-solid fa-cart-shopping"></i> Delivery Fee: Free</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="flex gap-3">
+                    <img src="Images/9.png" alt="">
+                    <div>
+                        <div class="flex gap-5">
+                            <h1><i class="fa-solid fa-star text-[#F99808]"></i>5.0</h1>
+                            <h1><i class="fa-regular fa-eye"></i>20</h1>
+                            <h1><i class="fa-regular fa-heart"></i>200</h1>
+                        </div>
+                        <h4 class="text-[#131318] font-semibold text-start text-xl">World Cup Flags Football</h4>
+                        <p class="text-start">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis.</p>
+                        <div class="flex gap-4">
+                            <h2 class="text-[#FF4240] font-semibold">Price - $22.00</h2>
+                            <h1><i class="fa-solid fa-cart-shopping"></i> Delivery Fee: Free</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex gap-3">
+                    <img src="Images/10.png" alt="">
+                    <div>
+                        <div class="flex gap-5">
+                            <h1><i class="fa-solid fa-star text-[#F99808]"></i>5.0</h1>
+                            <h1><i class="fa-regular fa-eye"></i>20</h1>
+                            <h1><i class="fa-regular fa-heart"></i>200</h1>
+                        </div>
+                        <h4 class="text-[#131318] font-semibold text-start text-xl">World Cup Flags Football</h4>
+                        <p class="text-start">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis.</p>
+                        <div class="flex gap-4">
+                            <h2 class="text-[#FF4240] font-semibold">Price - $22.00</h2>
+                            <h1><i class="fa-solid fa-cart-shopping"></i> Delivery Fee: Free</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+        </div>
+        <div>
+            <h4 class="text-[#131318] font-semibold text-center text-3xl">Clients Question</h4>
+            <p class="text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor.
+                Purus urna in sit
+                nullam proin. </p>
+        </div>
+        <div>
+            <h4 class="text-[#131318] font-semibold text-center text-3xl">Get In Touch</h4>
+            <p class="text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor.
+                Purus urna in sit
+                nullam proin. </p>
+        </div>
     </main>
     <footer>
 
