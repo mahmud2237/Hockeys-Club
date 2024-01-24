@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.font-manrope {
+    font-family: "Manrope", sans-serif;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    gap: 30px;
+}
+
+.container .box {
+    position: relative;
+    padding: 40px 0;
+    width: 240px;
+    background: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container .box .circle {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background: conic-gradient(from 0deg, var(--clr) 0%, var(--clr) 0% var(--i), #333333 var(--i), #333 100%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .box .circle::before {
+    content: '';
+    position: absolute;
+    inset: 10px;
+    background: #FFF;
+    border-radius: 50%;
+}
+
+.container .box h2 {
+    position: relative;
+    text-align: center;
+    font-size: 2.5em;
+    color: #131318;
+    font-weight: 600;
+}
